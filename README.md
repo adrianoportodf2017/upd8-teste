@@ -17,7 +17,7 @@ Antes de iniciar a configuração do projeto, certifique-se de que você possui 
 
 #### 1. Clone o repositório para o seu ambiente local:
    
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/adrianoportodf2017/upd8-teste.git
 
 #### 2. Acesse o diretório do projeto:
 
