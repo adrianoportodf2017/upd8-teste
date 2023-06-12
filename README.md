@@ -15,56 +15,46 @@ Antes de iniciar a configuração do projeto, certifique-se de que você possui 
 
 ### 2. Configuração do Laravel
 
-###1. Clone o repositório para o seu ambiente local:
+#### 1. Clone o repositório para o seu ambiente local:
+   
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-   ```shell
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-Acesse o diretório do projeto:
+#### 2. Acesse o diretório do projeto:
 
-   ```shell
 cd nome-do-repositorio
-Instale as dependências do projeto utilizando o Composer:
 
-   ```shell
+#### 3. Instale as dependências do projeto utilizando o Composer:
+
 composer install
-Crie o arquivo .env com base no arquivo .env.example:
 
-   ```shell
+#### 4. Crie o arquivo `.env` com base no arquivo `.env.example`:
+
 cp .env.example .env
-Configure o arquivo .env com as informações do seu ambiente, incluindo as configurações de conexão com o banco de dados.
 
-Gere a chave de criptografia do aplicativo:
+#### 5. Configure o arquivo `.env` com as informações do seu ambiente, incluindo as configurações de conexão com o banco de dados.
 
-   ```shell
-php artisan key:generate
-###3. Configuração do Banco de Dados
-Certifique-se de que o servidor de banco de dados MySQL está em execução.
+### 3. Configuração do Banco de Dados
 
-Crie um banco de dados vazio com o nome desejado (por exemplo, cadastro_cliente).
+ 1. Certifique-se de que o servidor de banco de dados MySQL está em execução.
 
-###4. Migrações e Seeders
-Execute as migrações do Laravel para criar as tabelas necessárias no banco de dados:
+ 2. Crie um banco de dados vazio com o nome desejado (por exemplo, `cadastro_cliente`).
 
-   ```shell
+### 4. Migrações e Seeders
+
+#### 1. Execute as migrações do Laravel para criar as tabelas necessárias no banco de dados:
+
 php artisan migrate
-Execute os seeders para popular o banco de dados com dados de exemplo:
 
-   ```shell
+#### 2. Execute os seeders para popular o banco de dados com dados de exemplo:
 
-php artisan db:seed
-5. Iniciar o Servidor
-Inicie o servidor de desenvolvimento do Laravel:
+php artisan db:seed --class=ClientesTableSeeder
 
-   ```shell
+### 5. Iniciar o Servidor
+
+#### 1. Inicie o servidor de desenvolvimento do Laravel:
+
 php artisan serve
-O servidor será iniciado na URL http://localhost:8000. Acesse essa URL em seu navegador para visualizar o projeto.
+
+#### 2. O servidor será iniciado na URL `http://localhost:8000`. Acesse essa URL em seu navegador para visualizar o projeto.
 
 Pronto! Agora você pode cadastrar, visualizar, atualizar e excluir clientes por meio da interface do usuário.
-
-Observação: Certifique-se de que o servidor de banco de dados esteja em execução antes de iniciar o servidor do Laravel. Caso contrário, a aplicação não conseguirá se conectar ao banco de dados.
-
-Conclusão
-Este projeto é um exemplo básico de um cadastro de cliente utilizando PHP Laravel e MySQL. Sinta-se à vontade para explorar o código-fonte e fazer melhorias ou personalizações de acordo com suas necessidades.
-
-Se tiver alguma dúvida ou encontrar algum problema durante a configuração ou utilização deste projeto, fique à vontade para abrir uma nova issue neste repositório.
-
