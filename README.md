@@ -21,7 +21,7 @@ git clone https://github.com/adrianoportodf2017/upd8-teste.git
 
 #### 2. Acesse o diretório do projeto:
 
-cd nome-do-repositorio
+cd upd8-teste
 
 #### 3. Instale as dependências do projeto utilizando o Composer:
 
@@ -51,7 +51,7 @@ php artisan migrate
 
 #### 2. Execute os seeders para popular o banco de dados com dados de exemplo:
 
-php artisan db:seed --class=ClientesTableSeeder
+php artisan db:seed
 
 ### 5. Iniciar o Servidor
 
