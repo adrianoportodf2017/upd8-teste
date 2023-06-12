@@ -33,6 +33,10 @@ cp .env.example .env
 
 #### 5. Configure o arquivo `.env` com as informações do seu ambiente, incluindo as configurações de conexão com o banco de dados.
 
+#### 6.Gere a chave de criptografia do aplicativo:
+
+php artisan key:generate
+
 ### 3. Configuração do Banco de Dados
 
  1. Certifique-se de que o servidor de banco de dados MySQL está em execução.
