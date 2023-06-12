@@ -21,25 +21,21 @@ Antes de iniciar a configuração do projeto, certifique-se de que você possui 
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
 Acesse o diretório do projeto:
 
-shell
-Copy code
+   ```shell
 cd nome-do-repositorio
 Instale as dependências do projeto utilizando o Composer:
 
-shell
-Copy code
+   ```shell
 composer install
 Crie o arquivo .env com base no arquivo .env.example:
 
-shell
-Copy code
+   ```shell
 cp .env.example .env
 Configure o arquivo .env com as informações do seu ambiente, incluindo as configurações de conexão com o banco de dados.
 
 Gere a chave de criptografia do aplicativo:
 
-shell
-Copy code
+   ```shell
 php artisan key:generate
 ###3. Configuração do Banco de Dados
 Certifique-se de que o servidor de banco de dados MySQL está em execução.
@@ -49,19 +45,17 @@ Crie um banco de dados vazio com o nome desejado (por exemplo, cadastro_cliente)
 ###4. Migrações e Seeders
 Execute as migrações do Laravel para criar as tabelas necessárias no banco de dados:
 
-shell
-Copy code
+   ```shell
 php artisan migrate
 Execute os seeders para popular o banco de dados com dados de exemplo:
 
-shell
-Copy code
+   ```shell
+
 php artisan db:seed
 5. Iniciar o Servidor
 Inicie o servidor de desenvolvimento do Laravel:
 
-shell
-Copy code
+   ```shell
 php artisan serve
 O servidor será iniciado na URL http://localhost:8000. Acesse essa URL em seu navegador para visualizar o projeto.
 
